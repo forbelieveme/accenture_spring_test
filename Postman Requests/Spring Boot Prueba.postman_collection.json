@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "59600999-5d03-4471-9ac0-5aca9b54a47c",
+		"name": "Spring Boot Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST factura",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productos\" : [\r\n       {\r\n           \"id\" : 1,\r\n           \"nombre\" : \"arroz\",\r\n           \"valor\" : 7000\r\n       },\r\n       {\r\n           \"id\" : 2,\r\n           \"nombre\" : \"papas\",\r\n           \"valor\" : 7000\r\n       },\r\n       {\r\n           \"id\" : 3,\r\n           \"nombre\" : \"haner\",\r\n           \"valor\" : 7000\r\n       }\r\n    ]    \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/creates/14584",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creates",
+						"14584"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST edit factura",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/edit/12345",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit",
+						"12345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST delete factura",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delete/123456",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
